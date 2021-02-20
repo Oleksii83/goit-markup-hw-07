@@ -3,6 +3,10 @@
 }
 .points {
   display: flex;
+
+  &:last-child {
+    margin: none;
+  }
 }
 
 .points-flex {
@@ -35,9 +39,6 @@
   background-image: url('../img/main/keyboard.jpg');
 }
 
-.points :last-child {
-  margin: none;
-}
 .points-heading {
   font-size: 14px;
   font-weight: 700;

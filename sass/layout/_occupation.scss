@@ -2,7 +2,7 @@
   padding-top: 95px;
   padding-bottom: 95px;
 }
-.occupation-heading {
+.occupation__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -10,14 +10,12 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-.occupation-flex {
-  display: flex;
-}
-.occupation-list {
+
+.occupation__list {
   position: relative;
 }
 
-.occupation-text {
+.occupation__text {
   position: absolute;
   display: block;
   bottom: 0;
@@ -35,11 +33,12 @@
 }
 
 /*sectoin lesson*/
-.occupation-flex {
+.occupation__flex {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-}
-.occupation-flex:last-child {
-  margin: none;
+
+  &:last-child {
+    margin: none;
+  }
 }

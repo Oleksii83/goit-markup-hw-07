@@ -16,10 +16,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.addres-title:hover .addres-svg,
-.addres-title:focus .addres-svg {
-  fill: var(--accent-color);
-}
 .icon-tel {
   display: flex;
   justify-content: center;
@@ -34,29 +30,31 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.addres-title:hover .tel-svg,
-.addres-title:focus .tel-svg {
-  fill: var(--accent-color);
-}
-
 .addres-title {
   margin-right: 50px;
-  transition: 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.addres-title :last-child {
-  margin-right: none;
-}
-
-.addres-title {
   font-style: normal;
   font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--tilt-color);
-}
+  transition: 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.addres-title:hover,
-.addres-title:focus {
-  color: var(--accent-color);
+  &:last-child {
+    margin-right: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover .tel-svg,
+  &:focus .tel-svg {
+    fill: var(--accent-color);
+  }
+  &:hover .addres-svg,
+  &:focus .addres-svg {
+    fill: var(--accent-color);
+  }
 }

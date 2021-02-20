@@ -7,6 +7,10 @@
 
 .social-list {
   display: flex;
+
+  &:last-child {
+    margin: none;
+  }
 }
 .social-list-item {
   margin-right: 10px;
@@ -18,14 +22,7 @@
   transition: fill 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list:last-child {
-  margin: none;
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-}
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -35,9 +32,14 @@
   background-color: var(--background-color);
   border-radius: 50%;
   transition: background-color 250ms linear;
-}
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &:hover .social-list-icon,
+  &:focus .social-list-icon {
+    fill: var(--background-color);
+  }
 }

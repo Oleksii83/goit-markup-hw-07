@@ -14,9 +14,16 @@
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-}
-.customer-list-item:last-child {
-  margin-right: none;
+  transition: 250ms linear;
+
+  &:last-child {
+    margin-right: none;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .customer-one {
@@ -28,11 +35,18 @@
   align-items: center;
   transition: 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .customer-list-icon,
+  &:focus .customer-list-icon {
+    fill: var(--accent-color);
+  }
 }
+
 .customer-list-icon {
   fill: var(--icon-color);
   transition: 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear;
 }
 .size-one {
   width: 45px;
@@ -58,20 +72,4 @@
 .size-six {
   width: 45px;
   height: 50px;
-}
-.customer-list-item {
-  transition: 250ms linear;
-}
-.customer-list-icon {
-  transition: fill 250ms linear;
-}
-
-.customer-one:hover .customer-list-icon,
-.customer-one:focus .customer-list-icon {
-  fill: var(--accent-color);
-}
-
-.customer-list-item:hover,
-.customer-list-item:focus {
-  border-color: var(--accent-color);
 }
