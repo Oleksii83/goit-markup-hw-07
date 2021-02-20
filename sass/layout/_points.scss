@@ -1,0 +1,59 @@
+.points-section {
+  padding-top: 95px;
+}
+.points {
+  display: flex;
+}
+
+.points-flex {
+  flex-wrap: wrap;
+  width: 270px;
+  margin-right: 30px;
+}
+
+.points-svg {
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background: #f5f4fa;
+  background-position: center;
+}
+.ant-background {
+  content: '';
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.icon-anten::before {
+  background-image: url('../img/main/keyboard.jpg');
+}
+
+.points :last-child {
+  margin: none;
+}
+.points-heading {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.points-title {
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.714;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  color: var(--tilt-color);
+}

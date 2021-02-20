@@ -1,0 +1,62 @@
+.address {
+  display: flex;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.icon-addres {
+  display: flex;
+  justify-content: center;
+}
+.addres-svg {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.addres-title:hover .addres-svg,
+.addres-title:focus .addres-svg {
+  fill: var(--accent-color);
+}
+.icon-tel {
+  display: flex;
+  justify-content: center;
+}
+.tel-svg {
+  position: relative;
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.addres-title:hover .tel-svg,
+.addres-title:focus .tel-svg {
+  fill: var(--accent-color);
+}
+
+.addres-title {
+  margin-right: 50px;
+  transition: 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.addres-title :last-child {
+  margin-right: none;
+}
+
+.addres-title {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--tilt-color);
+}
+
+.addres-title:hover,
+.addres-title:focus {
+  color: var(--accent-color);
+}
